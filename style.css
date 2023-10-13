@@ -1,0 +1,88 @@
+body {
+    background-image: url("https://plus.unsplash.com/premium_photo-1682690777032-d3404f78025f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fHR1cnF1aXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 28px;
+}
+h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.allQuestions, .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form, .correctAnswers {
+    opacity: 0;
+    background-color: #fff;  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 600px;
+    padding: 40px;
+    border-radius: 10px;
+}
+label {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+.question {
+    padding: 10px;
+}
+.btn, .btn-next, .btn-back {
+    background-color: #12b5f0; 
+    color: #fff;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.btn:hover, .btn-next:hover, .btn-back:hover {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,141,153,1) 35%, rgba(0,212,255,1) 100%);
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 15px;
+}
+.result {
+    margin: auto;
+    margin-top: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 13px;
+}
+p {
+    font-size: 18px;
+    margin: 0px;
+}
+span {
+    color: rgb(9, 179, 9);
+    font-size: 20px;
+    font-weight: bold;
+}
+@media all and (max-width: 500px){
+    form {
+        width: 250px;
+        padding: 40px;
+}
+}
