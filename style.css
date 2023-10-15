@@ -15,6 +15,11 @@ h1 {
     margin-top: 50px;
     font-size: 28px;
 }
+.headerAnswers {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 24px;
+}
 h2 {
     color: #fff;
     margin-top: 0px;
@@ -98,8 +103,13 @@ span {
     font-weight: bold;
 }
 @media all and (max-width: 500px){
-    form {
+    form, .correctAnswers {
         width: 250px;
         padding: 40px;
 }
+    .question {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
